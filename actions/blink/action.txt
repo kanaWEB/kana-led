@@ -1,0 +1,3 @@
+bin/onoff [gpio] [state]
+bin/blink [gpio] [speed] [times]
+bin/pwm [gpio] [speed] [times]
