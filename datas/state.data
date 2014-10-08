@@ -1,0 +1,19 @@
+<?php
+#@# name:Led state | exemple:ON/OFF | led_id:led;select;object/led | plugin:led
+if(isset($data_link_json->led_id)){
+$led_id = $data_link_json->led_id;
+}
+
+if(isset($_["led_id"])){
+$led_id = $_["led_id"];
+}
+
+$led_db = new Entity("led");
+$led_data = $led_db->load([
+	"id" => $led_id
+	]);
+
+$gpio = $led_data["gpio"];
+include(CORE_DATAS."gpio/pinstate.data");
+
+?>
