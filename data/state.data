@@ -14,6 +14,6 @@ $led_data = $led_db->load([
 	]);
 
 $gpio = $led_data["gpio"];
-include(CORE_DATAS."gpio/pinstate.data");
+include(CORE_DATA."gpio/pinstate.data");
 
 ?>
