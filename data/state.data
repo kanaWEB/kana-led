@@ -1,5 +1,5 @@
 <?php
-#@# name:Led state | exemple:ON/OFF | led_id:led;select;object/led | plugin:led
+#@# name:Led state | example:ON/OFF | led_id:led;select;object/led | plugin:led
 if(isset($data_link_json->led_id)){
 $led_id = $data_link_json->led_id;
 }
