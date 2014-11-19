@@ -8,7 +8,7 @@ if(isset($_["led_id"])){
 $led_id = $_["led_id"];
 }
 
-$led_db = new Entity("led");
+$led_db = new Entity("config,"led");
 $led_data = $led_db->load([
 	"id" => $led_id
 	]);

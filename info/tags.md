@@ -1,0 +1,1 @@
+led,del,light,notification,trigger,objects,gpios
