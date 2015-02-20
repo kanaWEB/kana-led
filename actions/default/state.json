@@ -1,0 +1,4 @@
+{
+	"onload":  "led/check",
+	"html" : "default"
+}

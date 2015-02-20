@@ -1,0 +1,15 @@
+{
+	"default": {
+		"command": "onoff",
+		"usage" : "onoff gpio state",
+		"args": {
+			"gpio": {
+				"type": "Config"
+			},
+			"state": {
+				"type": "Post",
+				"modifier" : "Binary"
+			}
+		}
+	}
+}

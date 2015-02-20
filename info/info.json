@@ -1,0 +1,14 @@
+{
+   "description" : "Use one or more Leds as a means to notify",
+   "name" : "L.E.D. (Light)",
+   "tags" : {
+      "led" : {},
+      "del" : {},
+      "light" : {},
+      "notification" : {},
+      "trigger" : {},
+      "object" : {},
+      "gpios" : {}
+   },
+   "type" : "gpios"
+}

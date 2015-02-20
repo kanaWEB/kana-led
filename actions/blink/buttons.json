@@ -1,0 +1,37 @@
+{
+	"buttons" : [
+	{
+		"name": "Turn on",
+		"color" : "success",
+		"icon" : "glyphicon-off",
+		"command" : "default",
+		"state" : 1,
+		"effect" : {
+			"type" : "state_toggle(this,'red')"
+		}
+	},
+	{
+		"name" : "Turn off",
+		"color" : "danger",
+		"icon" : "glyphicon-off",
+		"state" : 0,
+		"effect" : {
+			"type" : "state_toggle(this,'off')"
+		}
+	},	
+	{
+		"name" : "Blink",
+		"command" : "blink",
+		"effect" : {
+			"type" : "state_blink(this,'red')"
+		}
+	},
+	{
+		"name" : "Fade",
+		"command" : "pwm",
+		"effect" : {
+			"type" : "state_fadeinout(this,'red','off')"
+		}
+	}
+]
+}

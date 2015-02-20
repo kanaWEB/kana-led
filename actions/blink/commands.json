@@ -1,0 +1,45 @@
+{
+	"default": {
+		"command": "onoff",
+		"usage" : "onoff gpio state",
+		"args": {
+			"gpio": {
+				"type": "Config"
+			},
+			"state": {
+				"type": "Post",
+				"modifier" : "Binary"
+			}
+		}
+	},
+	"blink": {
+		"command": "blink",
+		"usage" : "blink gpio speed times",
+		"args": {
+				"gpio": {
+					"type": "Config"
+				},
+				"speed": {
+					"type": "Actions"
+				},
+				"times": {
+					"type": "Actions"
+				}
+		}
+	},
+	"pwm": {
+		"command": "pwm",
+		"usage" : "pwm gpio speed times",
+		"args": {
+			"gpio": {
+			"type": "Config"
+			},
+			"speed": {
+			"type": "Actions"
+			},
+			"times": {
+			"type": "Actions"
+			}
+		}
+	}
+}
