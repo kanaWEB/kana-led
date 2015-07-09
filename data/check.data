@@ -1,35 +1,32 @@
 <?php
 #@# name:Led state | example:ON/OFF | led_id:led;select;object/led | plugin:led
-if(isset($data_link_json->led_id)){
-$led_id = $data_link_json->led_id;
+if (isset($data_link_json->led_id)) {
+    $led_id = $data_link_json->led_id;
 }
 
-if(isset($_["led_id"])){
-$led_id = $_["led_id"];
+if (isset($_["led_id"])) {
+    $led_id = $_["led_id"];
 }
 
-if(isset($state_action)){
-		$led_id = $state_action["object_key"];
+if (isset($state_action)) {
+    $led_id = $state_action["object_key"];
 }
 
-$led_db = new Entity("config","led");
+$led_db = new Entity("config", "led");
 $led_data = $led_db->load([
-	"id" => $led_id
-]);
+    "id" => $led_id
+    ]);
 
 $gpio = $led_data["gpio"];
 include(CORE_DATA."gpio/pinstate.data");
-if($data){
- $data = 
- [ 
- 	"class" => "state_red",
- ];
+if ($data) {
+    $data =
+    [
+    "class" => "state_red",
+    ];
+} else {
+    $data =
+    [
+    "class" => "state_off",
+    ];
 }
-else
-{
- $data = 
- [ 
- 	"class" => "state_off",
- ];
-}
-?>

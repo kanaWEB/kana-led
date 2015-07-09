@@ -1,14 +1,14 @@
 {
    "description" : "Utiliser une ou plusieurs DEL comme notification",
    "name" : "D.E.L. (Lumière)",
-     "tags" : {
-      "led" : {},
-      "del" : {},
-      "light" : {},
-      "notification" : {},
-      "trigger" : {},
-      "object" : {},
-      "gpios" : {}
-   },
+     "tags" : [
+      "led",
+      "del",
+      "light",
+      "notification",
+      "trigger",
+      "object",
+      "gpios"
+   ],
    "type" : "gpios"
 }

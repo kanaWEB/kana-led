@@ -1,6 +1,6 @@
 {
-	"default": {
-		"command": "onoff",
+		"default": {
+		"command": "bin/onoff",
 		"usage" : "onoff gpio state",
 		"args": {
 			"gpio": {
