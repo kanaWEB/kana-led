@@ -1,6 +1,6 @@
 {
 	"default": {
-		"command": "/opt/piget/led/bin/onoff",
+		"command": "sudo /opt/piget/led/bin/onoff",
 		"usage" : "onoff gpio state",
 		"args": {
 			"gpio": {
@@ -13,7 +13,7 @@
 		}
 	},
 	"blink": {
-		"command": "/opt/piget/led/bin/blink",
+		"command": "sudo /opt/piget/led/bin/blink",
 		"usage" : "blink gpio speed times",
 		"args": {
 				"gpio": {
@@ -28,7 +28,7 @@
 		}
 	},
 	"pwm": {
-		"command": "/opt/piget/led/bin/pwm",
+		"command": "sudo /opt/piget/led/bin/pwm",
 		"usage" : "pwm gpio speed times",
 		"args": {
 			"gpio": {
