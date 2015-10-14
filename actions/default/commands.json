@@ -1,6 +1,6 @@
 {
 		"default": {
-		"command": "bin/onoff",
+		"command": "sudo /do/led/onoff",
 		"usage" : "onoff gpio state",
 		"args": {
 			"gpio": {
