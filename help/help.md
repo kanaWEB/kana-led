@@ -1,3 +1,6 @@
+Typical Power Consumption
+--------------------------
+
 Voltage | Current | Luminous Intensity
 --------|---------|--------------------
 2.2V    | 20ma    | 220mcd
@@ -13,14 +16,24 @@ Wiring
 ![Wiring a led](plugins/objects/led/help/img/wiring.jpg)
 
 Control a led
------------
+-------------
 ````
 /do/led/on GPIO
 /do/led/off GPIO
 /do/led/blink GPIO
 ````
 
-# Example Blink Program in Python
+Control Green ACT System Led
+-----------------------------
+````
+/pi/ledOn
+/pi/ledOff
+/pi/ledBlink
+/pi/ledReset
+````
+
+Example Blink Program in Python
+-------------------------------
 ````
 import RPi.GPIO as GPIO
 import time
@@ -36,3 +49,5 @@ time.sleep(1)
 GPIO.output(ledPin,False)
 
 ````
+
+[Contribute to this document](https://github.com/madnerds/kana-led/blob/master/help/help.md)

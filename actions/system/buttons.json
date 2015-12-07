@@ -1,0 +1,38 @@
+{
+	"buttons" : [
+	{
+		"name": "Turn on",
+		"color" : "success",
+		"icon" : "glyphicon-off",
+		"command" : "on",
+		"effect" : {
+			"type" : "state_toggle(this,'green')"
+		}
+	},
+	{
+		"name" : "Turn off",
+		"color" : "danger",
+		"icon" : "glyphicon-off",
+		"command" : "off",
+		"effect" : {
+			"type" : "state_toggle(this,'off')"
+		}
+	},	
+	{
+		"name" : "Blink",
+		"color" : "warning",
+		"command" : "blink",
+		"effect" : {
+			"type" : "state_blink(this,'green')"
+		}
+	},
+	{
+		"name" : "Reset",
+		"color" : "success",
+		"command" : "reset",
+		"effect" : {
+			"type" : "state_toggle(this,'off')"
+		}
+	}
+]
+}

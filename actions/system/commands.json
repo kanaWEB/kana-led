@@ -1,0 +1,14 @@
+{
+	"on": {
+		"command": "sudo /pi/ledOn"
+	},
+	"off":{
+		"command": "sudo /pi/ledOff"
+	},
+	"reset":{
+		"command": "sudo /pi/ledReset"
+	},
+	"blink": {
+		"command": "sudo /pi/ledBlink"
+	}
+}
