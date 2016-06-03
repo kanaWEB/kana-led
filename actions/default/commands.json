@@ -1,15 +1,20 @@
 {
-		"default": {
-		"command": "sudo /do/led/onoff",
+		"on": {
+		"command": "sudo /do/led/on",
 		"usage" : "onoff gpio state",
 		"args": {
 			"gpio": {
 				"type": "Config"
-			},
-			"state": {
-				"type": "Post",
-				"modifier" : "Binary"
+				}
+			}
+		},
+		"off": {
+		"command": "sudo /do/led/off",
+		"usage" : "onoff gpio state",
+		"args": {
+			"gpio": {
+				"type": "Config"
+				}
 			}
 		}
-	}
 }

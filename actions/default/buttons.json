@@ -4,7 +4,7 @@
 		"name": "Turn on",
 		"color" : "success",
 		"icon" : "glyphicon-off",
-		"command" : "default",
+		"command" : "on",
 		"state" : 1,
 		"effect" : {
 			"type" : "state_toggle(this,'red')"
@@ -12,6 +12,7 @@
 	},
 	{
 		"name" : "Turn off",
+		"command" : "off",
 		"color" : "danger",
 		"icon" : "glyphicon-off",
 		"state" : 0,
